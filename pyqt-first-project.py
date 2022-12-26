@@ -1,18 +1,17 @@
-from threading import Thread
 from PyQt5.QtWidgets import QWidget
 import sys
 import pytube
 
-from PyQt5.QtGui import QColor, QPalette
+# from PyQt5.QtGui import QColor, QPalette
 from PyQt5.QtWidgets import QApplication, QMainWindow, \
     QLineEdit, QVBoxLayout, QPushButton, QTextEdit
 
 
-# use QColor.colorNames() to print out the colors strings 
-def set_widget_color(widget, color):
-    palette = widget.palette()
-    palette.setColor(QPalette.Window, QColor(color))
-    widget.setPalette(palette)
+# use QColor.colorNames() to print out the colors strings
+# def set_widget_color(widget, color):
+#    palette = widget.palette()
+#    palette.setColor(QPalette.Window, QColor(color))
+#    widget.setPalette(palette)
 
 
 class MainWindow(QMainWindow):
@@ -50,7 +49,7 @@ class MainWindow(QMainWindow):
         layout.setSpacing(50)
 
         layout.addWidget(self.input)
-        layout.addWidget(self.button, 1)
+        layout.addWidget(self.button)
         self.setCentralWidget(self.output)
 
         container = QWidget()
