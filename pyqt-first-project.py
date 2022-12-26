@@ -8,7 +8,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, \
     QLineEdit, QVBoxLayout, QPushButton, QTextEdit
 
 
-# use QColor.colorNames() to print out the colors strings
+# use QColor.colorNames() to print out the colors strings 
 def set_widget_color(widget, color):
     palette = widget.palette()
     palette.setColor(QPalette.Window, QColor(color))
